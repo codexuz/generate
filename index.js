@@ -25,7 +25,7 @@ app.get('/', async (req, res)=>{
 })
 
 
-app.post('/report', async (req, res)=>{
+app.post('/generate', async (req, res)=>{
   const {transcript} = req.body
 
    const completion = await openai.completions.create({
