@@ -30,7 +30,7 @@ app.post('/generate', async (req, res)=>{
 
    const completion = await openai.completions.create({
     model: "gpt-3.5-turbo-instruct",
-    prompt: `Generate a high score IELTS essay sample to this topic with html <p> and <br> tags: ${question}
+    prompt: `Generate a high score IELTS essay sample to this topic: ${question}
     `,
     max_tokens: 800,
     temperature: 0,
